@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Analytics</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">INFLUENCER ANALYTICS</h1>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="scroll bar" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-button hide-desktop"><img src="images/exit.svg" alt="exit button"></li>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="clients.html">Our Clients</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="title-box">
+        <img src="images/IA_banner.png" alt="IA Logo" class="IA_Logo">
+    </div>
+
+    <div class="IntroductionContainer">
+        <div class="container">
+            <ul>
+                <li>
+                    <!-- <img src="images/young.jpg" alt="mrYoung"> -->
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                </li>
+
+                <li>
+                    <!-- <img src="images/michelle.jpg" alt="leader michelle"> -->
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener("click",function(e) {
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        }); 
+
+        exit.addEventListener("click",function(e) {
+            nav.classList.add("hide-mobile");
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
